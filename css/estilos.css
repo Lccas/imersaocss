@@ -1,0 +1,38 @@
+body {
+    background-image:
+  url('https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png');
+    background-size: auto 100vh;
+    font-family: Arial;
+  } 
+  
+  .menu{
+    background-color: white;
+  }
+  
+  .menu ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li {
+    list-style: none; 
+  }
+  
+  .site-title,
+  .site-subtitle{
+    color: #311b92;
+    text-align: center;
+  }
+  
+  .site-subtitle{
+    font-style: italic;  
+  }
+  
+  a{
+    color: #001f3f;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    text-decoration: underline;
+  }
