@@ -5,7 +5,6 @@
 }
 
 body {
-  background-image: url('https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png');
   background-size: auto 100vh;
   font-family: 'roboto', sans-serif;
   height: 100vh;
@@ -24,6 +23,8 @@ body {
 }
 
 header{
+  background-image: url('https://cdn.pixabay.com/photo/2017/02/15/11/05/texture-2068283_960_720.jpg');
+  background-size: cover;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -32,7 +33,7 @@ header{
 }
 
 .menu{
-  background-color: white;
+  background-color: #333333;
   position: fixed;
   width: 100vw;
   top: 0;
@@ -40,7 +41,7 @@ header{
 
 .footer a,
 .menu a{
-  color: #001f3f;
+  color: #e1f4f3;
   text-decoration: none;
   display: block;
   padding: 10px 20px;
@@ -61,7 +62,7 @@ a:hover{
 
 .site-title,
 .site-subtitle{
-  color: #311b92;
+  color: #333333;
   text-align: center;
 }
 
@@ -79,22 +80,65 @@ a:hover{
   line-height: 2.4em;
 }
 
+.portfolio{
+  background-color: #cdcdcd;
+  padding: 2em;
+  height: 100vh;
+}
+
 .portfolio h2{
   font-family: 'roboto', sans-serif;
+  color: #333333;
+  font-size: 2em;
+}
+
+.portfolio .grid{
+  display: grid;
+  gap: 2em;
+}
+
+@media(min-width: 560px){
+  .portfolio .grid{
+    grid-template-columns: repeat(2, 240px);
+    justify-content: center;
+  }
+}
+
+@media(min-width: 880px){
+  .portfolio .grid{
+    grid-template-columns: repeat(3, 260px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 8em - 48px);
+  }
+}
+
+.portfolio figure{
+  text-align: center;
 }
 
 .img-portfolio{
   height: 180px;
-  width: 180px;
+  width: 240px;
+  object-fit: cover;
 }
 
+/* @media(min-width: 1200px){
+  .img-portfolio{
+    height: auto;
+    width: 100%;
+  }
+} */
+
 .footer{
-  background: #839cc4;
+  background: #706c61;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .footer a{
-  color: #001f3f;
+  color: #e1f4f3;
+  width: 60px;
+  height: 60px;
 }
