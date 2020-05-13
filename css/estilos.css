@@ -7,7 +7,7 @@
 body {
   background-image: url('https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png');
   background-size: auto 100vh;
-  font-family: Arial;
+  font-family: 'roboto', sans-serif;
   height: 100vh;
 }
 
@@ -65,11 +65,22 @@ a:hover{
   text-align: center;
 }
 
+.site-title{
+  font-size: 3em;
+  font-family: 'roboto', sans-serif;
+}
+
 .site-subtitle{
+  font-family: 'roboto', sans-serif;
   font-style: italic;
   font-weight: lighter;
   text-align: center;
   font-size: 2em;  
+  line-height: 2.4em;
+}
+
+.portfolio h2{
+  font-family: 'roboto', sans-serif;
 }
 
 .img-portfolio{
