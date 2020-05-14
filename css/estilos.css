@@ -41,14 +41,20 @@ header{
 
 .footer a,
 .menu a{
-  color: #e1f4f3;
+  color: #ffffff;
   text-decoration: none;
   display: block;
   padding: 10px 20px;
 }
 
-a:hover{
-  text-decoration: underline;
+.menu a{
+  transition: background-color 1s, color 0.5s;
+}
+
+.menu a:active,
+.menu a:hover {
+  background-color: #ffffff;
+  color: #333333;
 }
 
 .menu ul{
@@ -80,12 +86,14 @@ a:hover{
   line-height: 2.4em;
 }
 
+/* .sobre, */
 .portfolio{
   background-color: #cdcdcd;
   padding: 2em;
   height: 100vh;
 }
 
+/* .sobre h2, */
 .portfolio h2{
   font-family: 'roboto', sans-serif;
   color: #333333;
@@ -121,6 +129,12 @@ a:hover{
   height: 180px;
   width: 240px;
   object-fit: cover;
+  object-position: left bottom;
+  transition: transform 500ms;
+}
+
+.img-portfolio:hover{
+  transform: scale(1.2) rotate(-1deg);
 }
 
 /* @media(min-width: 1200px){
@@ -141,4 +155,10 @@ a:hover{
   color: #e1f4f3;
   width: 60px;
   height: 60px;
+  transition: text-shadow 0.5s;
+}
+
+.footer a:active,
+.footer a:hover{
+  text-shadow: 0px 0px 12px black;
 }
