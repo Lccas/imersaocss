@@ -134,7 +134,7 @@ header{
 }
 
 .img-portfolio:hover{
-  transform: scale(1.2) rotate(-1deg);
+  transform: scale(1.2) rotate(-2deg);
 }
 
 /* @media(min-width: 1200px){
