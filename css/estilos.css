@@ -86,18 +86,57 @@ header{
   line-height: 2.4em;
 }
 
-/* .sobre, */
+.sobre,
 .portfolio{
   background-color: #cdcdcd;
   padding: 2em;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-/* .sobre h2, */
+@media (min-width: 1200px){
+  .sobre p,
+  .sobre h2,
+  .sobre .profile,
+  .container,
+  .portfolio h2,
+  .portfolio p{
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.sobre .profile img{
+  float: right;
+  margin-left: .5em;
+  border-radius: 1em;
+}
+
+@media (max-width: 400px){
+  .sobre .profile,
+  .sobre .profile img{
+    float: none;
+    text-align: center;
+  }
+}
+
+.sobre h2,
 .portfolio h2{
   font-family: 'roboto', sans-serif;
   color: #333333;
+  margin-bottom: 1.5em;
   font-size: 2em;
+}
+
+.portfolio h2{
+  margin-bottom: 0.25em;
+}
+
+.sobre  p{
+  color: #333333;
+  margin-bottom: .5em;
+  text-indent: 1.5em;
+  text-align: justify;
 }
 
 .portfolio .grid{
@@ -136,13 +175,6 @@ header{
 .img-portfolio:hover{
   transform: scale(1.2) rotate(-2deg);
 }
-
-/* @media(min-width: 1200px){
-  .img-portfolio{
-    height: auto;
-    width: 100%;
-  }
-} */
 
 .footer{
   background: #706c61;
